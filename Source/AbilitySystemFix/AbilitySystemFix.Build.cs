@@ -7,7 +7,7 @@ public class AbilitySystemFix : ModuleRules
 	public AbilitySystemFix(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		bEnforceIWYU = true;
+		IWYUSupport = IWYUSupport.Full;
 
 		PublicDependencyModuleNames.AddRange(
 			new string[]
@@ -15,6 +15,7 @@ public class AbilitySystemFix : ModuleRules
 				"Core", 
 				"GameplayAbilities",
 				"GameplayTasks",
+				"GameplayTags",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
